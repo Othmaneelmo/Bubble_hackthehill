@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+    <!-- Instagram Icon -->
+
+    <!-- TikTok Icon -->
+
+    <!-- Facebook Icon -->
+
+    <!-- Instagram Hours Text -->
+
+    <!-- TikTok Hours Text -->
+
+    <!-- Facebook Hours Text -->
+
+    <TextView
+        android:id="@+id/instagramText"
+        android:layout_width="321dp"
+        android:layout_height="54dp"
+        android:text="5 hours on Instagram"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tiktokText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 hours on TikTok"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="94dp" />
+
+    <!-- Sad Face -->
+
+    <!-- Text Suggestion -->
+
+    <!-- Change Your Life Button -->
+
+    <TextView
+        android:id="@+id/facebookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.4 hours on Facebook"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="158dp" />
+
+    <TextView
+        android:id="@+id/facebookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.2 hours on Reddit"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/suggestionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="You could have used 7.4 hours somewhere else"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <Button
+        android:id="@+id/changeLifeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#bc78fa"
+        android:text="CHANGE YOUR LIFE"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suggestionText" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="118dp"
+        android:layout_height="370dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tiktokText"
+        app:srcCompat="@drawable/sad_face" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="94dp"
+        app:srcCompat="@drawable/instagram_icon"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-12dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/tiktok_icon"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/facebook_icon"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/reddit_icon"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="206dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
